@@ -10,6 +10,8 @@ filter-naver - https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/
 
 filter-cafe - https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-cafe.txt
 
+filter-search - https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-search.txt
+
 ## 경고
 
 개인적으로 사용하는 필터 리스트이기에 Breakage 등의 Issue에 대해 수정 의무가 없습니다.
