@@ -1,0 +1,8 @@
+! Jun 30, 2026 https://search.naver.com
+search.naver.com##div[data-block-id^="ai-briefing/prs_template_aib_answer_desk.ts"]
+search.naver.com##div[data-block-id^="aipick/prs_template_v2_aipick_basic_desk.ts"]
+search.naver.com##.TbkVyxDc
+search.naver.com##div.tab_menu:nth-of-type(1)
+search.naver.com##div.tab_menu:nth-of-type(3)
+search.naver.com##.cs_corp_trends
+search.naver.com##.sub_pack
