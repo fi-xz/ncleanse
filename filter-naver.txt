@@ -6,3 +6,7 @@ www.naver.com##div[class^="Layout-module__column_right___wLgQj"]:style(margin: a
 www.naver.com##.type_recommend.shortcut_area
 www.naver.com##.header_inner:style(height: 69px !important)
 www.naver.com##div.SettingView-module__setting_group___sP13J:nth-of-type(3)
+
+! Jun 30, 2026 https://www.naver.com
+www.naver.com##.type_effect.btn_ai_search
+www.naver.com##.search_box:style(right: 17px !important)
