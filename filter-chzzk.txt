@@ -1,58 +1,28 @@
-! Top banner advertisement
-chzzk.naver.com##._is_scrolled_55vbw_12._container_55vbw_2
-
-! Mainscreen Container
-chzzk.naver.com##._header_zi67z_2:not(:has(a[href*="following"])):upward(1)
-chzzk.naver.com##._header_zi67z_2:has-text("팔로잉 채널 라이브"):upward(1):style(margin-top: 0px !important)
-chzzk.naver.com##._container_cy5qc_2:remove()
-chzzk.naver.com##._container_gftsh_1._container_zi67z_21
-chzzk.naver.com##._container_laqsy_2._container_zi67z_21
-chzzk.naver.com##div[id="home_banner"]:upward(1)
-chzzk.naver.com##section._container_zi67z_21:empty
+! Jul 16, 2026 https://chzzk.naver.com
+chzzk.naver.com###layout-body section:not(section section):not(:has([class*="_filter_"])):not(:has(a[href*="following"]))
 
 ! Sidebar
-chzzk.naver.com##nav._section_q99ll_26:nth-of-type(3)
-chzzk.naver.com##nav._section_q99ll_26:nth-of-type(4)
-chzzk.naver.com##nav._section_q99ll_26:nth-of-type(5)
-chzzk.naver.com##nav._section_q99ll_26:nth-of-type(6)
-
-! Jun 27, 2026 01:02 Sidebar collapsed
-chzzk.naver.com##nav._section_q99ll_26:nth-of-type(1) > ._list_q99ll_53 > li._item_q99ll_63:nth-of-type(2) > ._menu_q99ll_1
-chzzk.naver.com##nav._section_q99ll_26:nth-of-type(1) > ._list_q99ll_53 > li._item_q99ll_63:nth-of-type(4) > ._menu_q99ll_1
-
-! Sidebar Cheesefarm
-chzzk.naver.com##li._item_q99ll_63:nth-of-type(6)
+chzzk.naver.com##nav[class*="_section_"]:has([class*="_title_"]:not(:has-text(팔로잉 채널)))
+chzzk.naver.com##nav[class*="_section_"] a[href="/clips"]:upward(li)
+chzzk.naver.com##nav[class*="_section_"] a[href="/schedule"]:upward(li)
+chzzk.naver.com##a[class*="_banner_"]:upward(li)
 
 ! Header
-chzzk.naver.com##._navigation_w2qby_14
-chzzk.naver.com##div._item_sp9wj_48:nth-of-type(1)
-chzzk.naver.com##._banner_w2qby_78
+chzzk.naver.com##nav[class*="_navigation_"]
+chzzk.naver.com##a[href*="game.naver.com/profile#cash"]:upward([class*="_item_"])
+chzzk.naver.com##a[href*="/event/fifaworldcup2026"]
+
+! Header/Sidebar/Body padding fix
+chzzk.naver.com###header:style(transform: unset !important)
+chzzk.naver.com###sidebar:style(transform: translateY(60px) !important; height: calc(-60px + 100vh) !important)
+chzzk.naver.com###layout-body:style(padding-top: 0px !important; min-height: 100vh !important)
 
 ! Profile Menu
-chzzk.naver.com##div._wrapper_1d4zi_86:nth-of-type(2) > ul > li._item_1d4zi_111:nth-of-type(5) > ._area_1d4zi_22
-chzzk.naver.com##li._item_1d4zi_111:nth-of-type(8) > ._area_1d4zi_22
-chzzk.naver.com##li._item_1d4zi_111:nth-of-type(9) > ._area_1d4zi_22
-chzzk.naver.com##li._item_1d4zi_111:nth-of-type(10) > ._area_1d4zi_22
-chzzk.naver.com##div._wrapper_1d4zi_86:nth-of-type(3)
-chzzk.naver.com##div._wrapper_1d4zi_86:nth-of-type(4)
-chzzk.naver.com##div._wrapper_1d4zi_86:nth-of-type(5) > ul > li._item_1d4zi_111:nth-of-type(1) > ._area_1d4zi_22
-chzzk.naver.com##div._wrapper_1d4zi_86:nth-of-type(5) > ul > li._item_1d4zi_111:nth-of-type(2) > ._area_1d4zi_22
-
-! Jun 19, 2026 https://chzzk.naver.com Padding fix
-chzzk.naver.com##header[class^="_container_hv430_1"]:style(transform: unset !important)
-chzzk.naver.com##aside[class^="_container_1vdxf_2 _is_expanded_1vdxf_12"]:style(transform: translateY(60px) !important; height: 100vh !important)
-chzzk.naver.com##div[class^="_body_uaq06_11 _is_expanded_uaq06_22"]:style(padding-top: 0px !important)
-
-! Ad-block detection bypass
-chzzk.naver.com##+js(no-xhr-if, nam.veta.naver.com method:OPTIONS)
-chzzk.naver.com##+js(json-prune, content.dab)
-
-! Popup
-chzzk.naver.com##._container_6t52z_1
-
-! Main page broadcasts filter fix
-chzzk.naver.com##._tab_tsisc_55:style(top: 0px !important)
-chzzk.naver.com##._filter_tsisc_36:style(top: 0px !important)
-
-! Jun 30, 2026 Sidebar collapsed Padding fix on main page
-chzzk.naver.com##aside[class^="_container_1vdxf_2"]:style(transform: translateY(60px) !important; height: 100vh !important)
+chzzk.naver.com##div[class*="_wrapper_"]:nth-of-type(2) > ul > li[class*="_item_"]:nth-of-type(5) > [class*="_area_"]
+chzzk.naver.com##li[class*="_item_"]:nth-of-type(8) > [class*="_area_"]
+chzzk.naver.com##li[class*="_item_"]:nth-of-type(9) > [class*="_area_"]
+chzzk.naver.com##li[class*="_item_"]:nth-of-type(10) > [class*="_area_"]
+chzzk.naver.com##div[class*="_wrapper_"]:nth-of-type(3)
+chzzk.naver.com##div[class*="_wrapper_"]:nth-of-type(4)
+chzzk.naver.com##div[class*="_wrapper_"]:nth-of-type(5) > ul > li[class*="_item_"]:nth-of-type(1) > [class*="_area_"]
+chzzk.naver.com##div[class*="_wrapper_"]:nth-of-type(5) > ul > li[class*="_item_"]:nth-of-type(2) > [class*="_area_"]
