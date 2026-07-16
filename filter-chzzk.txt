@@ -7,6 +7,12 @@ chzzk.naver.com##nav[class*="_section_"] a[href="/clips"]:upward(li)
 chzzk.naver.com##nav[class*="_section_"] a[href="/schedule"]:upward(li)
 chzzk.naver.com##a[class*="_banner_"]:upward(li)
 
+! Sidebar - Collapsed
+chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/clips"]:upward(li)
+chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/schedule"]:upward(li)
+chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/cheezefarm"]:upward(li)
+chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]):not(:has(a[href="/lives"])):not(:has(a[href="/following"]))
+
 ! Header
 chzzk.naver.com##nav[class*="_navigation_"]
 chzzk.naver.com##a[href*="game.naver.com/profile#cash"]:upward([class*="_item_"])
