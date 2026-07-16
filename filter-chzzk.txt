@@ -1,5 +1,5 @@
 ! Jul 16, 2026 https://chzzk.naver.com
-chzzk.naver.com###layout-body section:not(section section):not(:has([class*="_filter_"])):not(:has(a[href*="following"]))
+chzzk.naver.com##div[class*="_section_"] > section:not(:has([class*="_filter_"])):not(:has(a[href*="following"]))
 
 ! Sidebar
 chzzk.naver.com##nav[class*="_section_"]:has([class*="_title_"]:not(:has-text(팔로잉 채널)))
