@@ -16,6 +16,7 @@ chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]):not(:has(
 ! Header
 chzzk.naver.com##nav[class*="_navigation_"]
 chzzk.naver.com##a[href*="game.naver.com/profile#cash"]:upward([class*="_item_"])
+chzzk.naver.com##a[href*="game.naver.com/profile#cheat_key"]:upward([class*="_item_"])
 chzzk.naver.com##a[href*="/event/fifaworldcup2026"]
 
 ! Header/Sidebar/Body padding fix
