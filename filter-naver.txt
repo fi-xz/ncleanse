@@ -1,8 +1,4 @@
 www.naver.com##.service_box_wrap
-www.naver.com##.Layout-module__column_left___tLO23
-www.naver.com##div.Layout-module__content_area___b_3TU:nth-of-type(5)
-www.naver.com##.RightWidget-module__tool_area___dhpNQ
-www.naver.com##div[class^="Layout-module__column_right___wLgQj"]:style(margin: auto !important; float: none !important)
 www.naver.com##.type_recommend.shortcut_area
 www.naver.com##.header_inner:style(height: 69px !important)
 www.naver.com##div.SettingView-module__setting_group___sP13J:nth-of-type(3)
@@ -10,3 +6,10 @@ www.naver.com##div.SettingView-module__setting_group___sP13J:nth-of-type(3)
 ! Jun 30, 2026 https://www.naver.com
 www.naver.com##.type_effect.btn_ai_search
 www.naver.com##.search_box:style(right: 17px !important)
+
+! Aug 29, 2026 https://www.naver.com
+www.naver.com##div[id="newsstand"]
+www.naver.com##div[id="shopping"]
+www.naver.com##div[id="feed"]
+www.naver.com##div[id="widgetboard"]
+www.naver.com##div[class*="Layout-module__column_right"]:style(margin: auto !important; float: none !important)
