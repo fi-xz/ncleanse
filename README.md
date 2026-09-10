@@ -4,13 +4,12 @@
 
 ## Filters
 
-filter-chzzk - https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-chzzk.txt
-
-filter-naver - https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-naver.txt
-
-filter-cafe - https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-cafe.txt
-
-filter-search - https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-search.txt
+```
+https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-chzzk.txt
+https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-naver.txt
+https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-cafe.txt
+https://raw.githubusercontent.com/fi-xz/naver-cleansefilter/refs/heads/main/filter-search.txt
+```
 
 ## 경고
 
