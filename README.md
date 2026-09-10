@@ -1,4 +1,4 @@
-# naver-cleansefilter
+# ncleanse
 
 개인적으로 사용하기 위한 네이버 플랫폼 필터 리스트
 
