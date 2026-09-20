@@ -36,3 +36,6 @@ chzzk.naver.com##[id="header"] [class*="_wrapper_"]:nth-of-type(5) > ul > li[cla
 
 ! Main Homepage Event Popup
 chzzk.naver.com##div[data-nlog-area="event_popup"]
+
+! Sep 19, 2026 https://chzzk.naver.com
+chzzk.naver.com##div[data-nlog-area="home_top_skin"]
