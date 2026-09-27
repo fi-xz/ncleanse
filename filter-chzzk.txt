@@ -1,41 +1,45 @@
+! Title: ncleanse chzzk.naver.com Cosmetic Filters
+! Description: Personal cosmetic filters for chzzk.naver.com
+! Last modified: 2026-09-28
+
 ! Jul 16, 2026 https://chzzk.naver.com
-chzzk.naver.com##div[class*="_enter_"] > section:not(:has([class*="_filter_"])):not(:has(a[href*="following"]))
+chzzk.naver.com,~studio.chzzk.naver.com##selectordiv[class*="_enter_"] > section:not(:has([class*="_filter_"])):not(:has(a[href*="following"]))
 
 ! Sidebar
-chzzk.naver.com##nav[class*="_section_"]:has([class*="_title_"]:not(:has-text(팔로잉 채널)))
-chzzk.naver.com##nav[class*="_section_"] a[href="/clips"]:upward(li)
-chzzk.naver.com##nav[class*="_section_"] a[href="/schedule"]:upward(li)
-chzzk.naver.com##a[class*="_banner_"]:upward(li)
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_section_"]:has([class*="_title_"]:not(:has-text(팔로잉 채널)))
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_section_"] a[href="/clips"]:upward(li)
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_section_"] a[href="/schedule"]:upward(li)
+chzzk.naver.com,~studio.chzzk.naver.com##selectora[class*="_banner_"]:upward(li)
 
 ! Sidebar - Collapsed
-chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/clips"]:upward(li)
-chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/schedule"]:upward(li)
-chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/cheezefarm"]:upward(li)
-chzzk.naver.com##nav[class*="_section_"]:not([class*="_is_expanded_"]):not(:has(a[href="/lives"])):not(:has(a[href="/following"]))
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/clips"]:upward(li)
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/schedule"]:upward(li)
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_section_"]:not([class*="_is_expanded_"]) a[href="/cheezefarm"]:upward(li)
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_section_"]:not([class*="_is_expanded_"]):not(:has(a[href="/lives"])):not(nav[aria-label="팔로우"])
 
 ! Header
-chzzk.naver.com##nav[class*="_navigation_"]
-chzzk.naver.com##a[href*="game.naver.com/profile#cash"]:upward([class*="_item_"])
-chzzk.naver.com##a[href*="game.naver.com/profile#cheat_key"]:upward([class*="_item_"])
-chzzk.naver.com##a[href*="/event/fifaworldcup2026"]
+chzzk.naver.com,~studio.chzzk.naver.com##selectornav[class*="_navigation_"]
+chzzk.naver.com,~studio.chzzk.naver.com##selectora[href*="game.naver.com/profile#cash"]:upward([class*="_item_"])
+chzzk.naver.com,~studio.chzzk.naver.com##selectora[href*="game.naver.com/profile#cheat_key"]:upward([class*="_item_"])
+chzzk.naver.com,~studio.chzzk.naver.com##selectora[href*="/event/fifaworldcup2026"]
 
 ! Header/Sidebar/Body padding fix
-chzzk.naver.com###header:style(transform: unset !important)
-chzzk.naver.com###sidebar:style(transform: translateY(60px) !important; height: calc(-60px + 100vh) !important)
-chzzk.naver.com###layout-body:style(padding-top: 0px !important; min-height: 100vh !important)
+chzzk.naver.com,~studio.chzzk.naver.com##selector#header:style(transform: unset !important)
+chzzk.naver.com,~studio.chzzk.naver.com##selector#sidebar:style(transform: translateY(60px) !important; height: calc(-60px + 100vh) !important)
+chzzk.naver.com,~studio.chzzk.naver.com##selector#layout-body:style(padding-top: 0px !important; min-height: 100vh !important)
 
 ! Profile Menu
-chzzk.naver.com##[id="header"] [class*="_wrapper_"]:nth-of-type(2) > ul > li[class*="_item_"]:nth-of-type(5) > [class*="_area_"]
-chzzk.naver.com##[id="header"] li[class*="_item_"]:nth-of-type(8) > [class*="_area_"]
-chzzk.naver.com##[id="header"] li[class*="_item_"]:nth-of-type(9) > [class*="_area_"]
-chzzk.naver.com##[id="header"] li[class*="_item_"]:nth-of-type(10) > [class*="_area_"]
-chzzk.naver.com##[id="header"] [class*="_wrapper_"]:nth-of-type(3)
-chzzk.naver.com##[id="header"] [class*="_wrapper_"]:nth-of-type(4)
-chzzk.naver.com##[id="header"] [class*="_wrapper_"]:nth-of-type(5) > ul > li[class*="_item_"]:nth-of-type(1) > [class*="_area_"]
-chzzk.naver.com##[id="header"] [class*="_wrapper_"]:nth-of-type(5) > ul > li[class*="_item_"]:nth-of-type(2) > [class*="_area_"]
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] [class*="_wrapper_"]:nth-of-type(2) > ul > li[class*="_item_"]:nth-of-type(5) > [class*="_area_"]
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] li[class*="_item_"]:nth-of-type(8) > [class*="_area_"]
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] li[class*="_item_"]:nth-of-type(9) > [class*="_area_"]
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] li[class*="_item_"]:nth-of-type(10) > [class*="_area_"]
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] [class*="_wrapper_"]:nth-of-type(3)
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] [class*="_wrapper_"]:nth-of-type(4)
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] [class*="_wrapper_"]:nth-of-type(5) > ul > li[class*="_item_"]:nth-of-type(1) > [class*="_area_"]
+chzzk.naver.com,~studio.chzzk.naver.com##selector[id="header"] [class*="_wrapper_"]:nth-of-type(5) > ul > li[class*="_item_"]:nth-of-type(2) > [class*="_area_"]
 
 ! Main Homepage Event Popup
-chzzk.naver.com##div[data-nlog-area="event_popup"]
+chzzk.naver.com,~studio.chzzk.naver.com##selectordiv[data-nlog-area="event_popup"]
 
 ! Sep 19, 2026 https://chzzk.naver.com
-chzzk.naver.com##div[data-nlog-area="home_top_skin"]
+chzzk.naver.com,~studio.chzzk.naver.com##selectordiv[data-nlog-area="home_top_skin"]
